@@ -285,7 +285,7 @@ body {
     right: 0;
     bottom: 0;
     background-image: url('backgroundlofimoon.jpg');
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -917,6 +917,7 @@ body {
         font-size: 20px;
     }
 }
+
 
 
 
