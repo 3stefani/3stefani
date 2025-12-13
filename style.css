@@ -889,12 +889,7 @@ body {
     }
 }
 
-/* ===== FONDO PARA SECCIONES (Sobre mí, Proyectos, Contacto) ===== */
-.content-section {
-    background: linear-gradient(135deg, rgba(30, 60, 114, 0.95) 0%, rgba(42, 82, 152, 0.95) 100%), 
-                url('backgroundlofimoon.jpg') center/cover no-repeat fixed;
-    background-blend-mode: multiply;
-}
+
 
 
 
