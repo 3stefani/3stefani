@@ -271,42 +271,31 @@ body {
 .content-section {
     padding: 150px 80px 80px;
     min-height: 100vh;
-    background-color: #1e3c72;
     color: #fff;
-    position: relative;
-    overflow: hidden;
-}
-
-.content-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('backgroundlofimoon.jpg');
-    background-position: center top;
+    background-image: 
+        linear-gradient(135deg, rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)),
+        url('backgroundlofimoon.jpg');
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: 0.6;
-    z-index: 0;
 }
 
-.content-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(30, 60, 114, 0.6) 0%, rgba(42, 82, 152, 0.6) 100%);
-    z-index: 0;
+.content-section h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #aba72c;
 }
 
-.content-section > * {
-    position: relative;
-    z-index: 1;
+.content-section h2 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 
@@ -917,6 +906,7 @@ body {
         font-size: 20px;
     }
 }
+
 
 
 
