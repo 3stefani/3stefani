@@ -271,19 +271,48 @@ body {
 .content-section {
     padding: 150px 80px 80px;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(30, 60, 114, 0.25) 0%, rgba(42, 82, 152, 0.85) 100%), 
-                url('backgroundlofimoon.jpg');
-    background-position: center top;
+    background-color: #1e3c72;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('backgroundlofimoon.jpg');
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-blend-mode: multiply;
-    color: #fff;
+    opacity: 0.6;
+    z-index: 0;
 }
+
+.content-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.6) 0%, rgba(42, 82, 152, 0.6) 100%);
+    z-index: 0;
+}
+
+.content-section > * {
+    position: relative;
+    z-index: 1;
+}
+
 
 /* En móviles, quitar el efecto 'fixed' para mejor rendimiento */
 @media (max-width: 768px) {
-    .content-section {
+    .content-section::before {
         background-attachment: scroll;
     }
 }
@@ -888,6 +917,7 @@ body {
         font-size: 20px;
     }
 }
+
 
 
 
