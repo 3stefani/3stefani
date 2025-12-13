@@ -658,3 +658,220 @@ body {
         width: 100%;
     }
 }
+
+/* Featured Project */
+.featured-project {
+    background: linear-gradient(135deg, rgba(171, 167, 44, 0.3) 0%, rgba(171, 167, 44, 0.1) 100%);
+    border: 2px solid #aba72c;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.featured-project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(171, 167, 44, 0.3);
+}
+
+.featured-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.featured-title {
+    font-size: 32px;
+    color: #aba72c;
+    margin-bottom: 20px;
+}
+
+.featured-desc {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Category Titles */
+.category-title {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid;
+}
+
+.cyber-category {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+}
+
+.ai-category {
+    border-color: #4ecdc4;
+    color: #4ecdc4;
+}
+
+.qa-category {
+    border-color: #95e1d3;
+    color: #95e1d3;
+}
+
+.trading-category {
+    border-color: #f38181;
+    color: #f38181;
+}
+
+/* Project Cards - Mejorados */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    margin-bottom: 50px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #aba72c;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.project-header i {
+    font-size: 36px;
+    color: #aba72c;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin: 0;
+    color: #fff;
+}
+
+.project-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Project Tags */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: rgba(171, 167, 44, 0.3);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba(171, 167, 44, 0.5);
+}
+
+/* Project Links */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #aba72c;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #aba72c;
+    border-radius: 8px;
+    transition: all 0.3s;
+    align-self: flex-start;
+}
+
+.project-link:hover {
+    background: #aba72c;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.project-link i {
+    font-size: 20px;
+}
+
+/* CTA for Projects */
+.cta-text-projects {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.btn-contact-projects {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #aba72c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 2px solid #aba72c;
+}
+
+.btn-contact-projects:hover {
+    background: transparent;
+    color: #aba72c;
+    transform: translateY(-3px);
+}
+
+/* Responsive para Proyectos */
+@media (max-width: 768px) {
+    .featured-project {
+        padding: 30px 20px;
+    }
+
+    .featured-title {
+        font-size: 24px;
+    }
+
+    .featured-desc {
+        font-size: 16px;
+    }
+
+    .category-title {
+        font-size: 24px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-header i {
+        font-size: 28px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+}
