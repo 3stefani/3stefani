@@ -271,7 +271,7 @@ body {
 .content-section {
     padding: 150px 80px 80px;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(30, 60, 114, 0.55) 0%, rgba(42, 82, 152, 0.85) 100%), 
+    background: linear-gradient(135deg, rgba(30, 60, 114, 0.25) 0%, rgba(42, 82, 152, 0.85) 100%), 
                 url('backgroundlofimoon.jpg');
     background-position: center top;
     background-size: cover;
@@ -895,5 +895,6 @@ body {
                 url('backgroundlofimoon.jpg') center/cover no-repeat fixed;
     background-blend-mode: multiply;
 }
+
 
 
