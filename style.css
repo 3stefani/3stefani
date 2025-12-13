@@ -275,7 +275,7 @@ body {
     background-image: 
         linear-gradient(135deg, rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)),
         url('backgroundlofimoon.jpg');
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -906,6 +906,7 @@ body {
         font-size: 20px;
     }
 }
+
 
 
 
