@@ -1,151 +1,226 @@
-<!DOCTYPE html>
-<html lang="en"> 
 
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3stefani</title>
+    <title>3stefani - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
 </head>
-
 <body>
     <header class="header">
-        <a href="#" class="logo">3stefani</a> <!--el logo-->
-
-        <nav class="navbar"> 
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
+        <a href="#" class="logo" onclick="navigateToSection('inicio')">3stefani</a>
+        <nav class="navbar">
+            <a onclick="navigateToSection('inicio')" class="nav-link active" data-section="inicio">
+                <span class="text-inicio">Inicio</span>
+            </a>
+            <a onclick="navigateToSection('sobre-mi')" class="nav-link" data-section="sobre-mi">
+                <span class="text-sobre-mi">Sobre mí</span>
+            </a>
+            <a onclick="navigateToSection('proyectos')" class="nav-link" data-section="proyectos">
+                <span class="text-proyectos">Proyectos</span>
+            </a>
+            <a onclick="navigateToSection('contacto')" class="nav-link" data-section="contacto">
+                <span class="text-contacto">Contacto</span>
+            </a>
+            <div class="language-selector">
+                <button onclick="changeLanguage('es')" class="lang-btn active" data-lang="es">ES</button>
+                <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+            </div>
         </nav>
-
     </header>
 
-    <div class="container">
-        <div class="bg-slide active">
-            <div class="circle bg">
-                <img src="img1.jpg">
-            </div>
-            <div class="circle large">
-                <img src="img1.jpg">
-            </div>
-            <div class="circle small">
-                <img src="img1.jpg">
-            </div>
-
-            <div class="content-text">
-                <div class="place">
-                    <h1>QA</h1>
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section active">
+        <div class="container">
+            <div class="bg-slide active">
+                <div class="circle bg">
+                    <img src="img1.jpg" alt="QA">
                 </div>
-
-                <div class="country">
-                    <h2>Software Testing</h2>
+                <div class="circle large">
+                    <img src="img1.jpg" alt="QA">
                 </div>
+                <div class="circle small">
+                    <img src="img1.jpg" alt="QA">
+                </div>
+                <div class="content-text">
+                    <div class="place">
+                        <h1 class="slide-title">QA</h1>
+                    </div>
+                    <div class="country">
+                        <h2 class="slide-subtitle">Software Testing</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slide">
+                <div class="circle bg">
+                    <img src="img2.jpg" alt="Ciberseguridad">
+                </div>
+                <div class="circle large">
+                    <img src="img2.jpg" alt="Ciberseguridad">
+                </div>
+                <div class="circle small">
+                    <img src="img2.jpg" alt="Ciberseguridad">
+                </div>
+                <div class="content-text">
+                    <div class="place">
+                        <h1 class="slide-title">Ciberseguridad</h1>
+                    </div>
+                    <div class="country">
+                        <h2 class="slide-subtitle">Pentesting Web</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slide">
+                <div class="circle bg">
+                    <img src="img3.jpg" alt="Trading">
+                </div>
+                <div class="circle large">
+                    <img src="img3.jpg" alt="Trading">
+                </div>
+                <div class="circle small">
+                    <img src="img3.jpg" alt="Trading">
+                </div>
+                <div class="content-text">
+                    <div class="place">
+                        <h1 class="slide-title">Trading</h1>
+                    </div>
+                    <div class="country">
+                        <h2 class="slide-subtitle">Algorítmico</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slide">
+                <div class="circle bg">
+                    <img src="img4.jpg" alt="Bots">
+                </div>
+                <div class="circle large">
+                    <img src="img4.jpg" alt="Bots">
+                </div>
+                <div class="circle small">
+                    <img src="img4.jpg" alt="Bots">
+                </div>
+                <div class="content-text">
+                    <div class="place">
+                        <h1 class="slide-title">Bots Trading</h1>
+                    </div>
+                    <div class="country">
+                        <h2 class="slide-subtitle">Python</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slide">
+                <div class="circle bg">
+                    <img src="img5.jpg" alt="Frontend">
+                </div>
+                <div class="circle large">
+                    <img src="img5.jpg" alt="Frontend">
+                </div>
+                <div class="circle small">
+                    <img src="img5.jpg" alt="Frontend">
+                </div>
+                <div class="content-text">
+                    <div class="place">
+                        <h1 class="slide-title">FrontEnd</h1>
+                    </div>
+                    <div class="country">
+                        <h2 class="slide-subtitle">Html, Css, Javascript</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="circle-darktransp"></div>
+            <span class="line"></span>
+            <span class="rotate-btn">
+                <i class='bx bx-rotate-right'></i>
+            </span>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="sobre-mi" class="section content-section">
+        <h1 class="section-title-sobre-mi">Sobre mí</h1>
+        <p class="sobre-mi-intro">¡Hola! Soy un profesional apasionado por la tecnología con experiencia en múltiples áreas del desarrollo de software y la ciberseguridad.</p>
+        
+        <h2 class="sobre-mi-skills-title">Mis habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>QA & Testing</h3>
+                <p class="skill-description">Especializado en pruebas de software, automatización y aseguramiento de calidad.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title-cyber">Ciberseguridad</h3>
+                <p class="skill-description-cyber">Pentesting web, análisis de vulnerabilidades y seguridad informática.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title-trading">Trading Algorítmico</h3>
+                <p class="skill-description-trading">Desarrollo de estrategias automatizadas y análisis de mercados financieros.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title-bots">Bots con Python</h3>
+                <p class="skill-description-bots">Creación de bots de trading y automatización de procesos con Python.</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title-frontend">Desarrollo Frontend</h3>
+                <p class="skill-description-frontend">HTML, CSS, JavaScript y frameworks modernos para interfaces de usuario.</p>
             </div>
         </div>
+    </section>
 
-        <div class="bg-slide">
-            <div class="circle bg">
-                <img src="img2.jpg">
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="section content-section">
+        <h1 class="section-title-proyectos">Proyectos</h1>
+        <p class="proyectos-intro">Algunos de mis trabajos más destacados en diferentes áreas tecnológicas.</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title-1">Automatización de Pruebas</h3>
+                <p class="project-description-1">Framework de testing automatizado para aplicaciones web con Selenium y Python.</p>
             </div>
-            <div class="circle large">
-                <img src="img2.jpg">
+            <div class="project-card">
+                <h3 class="project-title-2">Análisis de Vulnerabilidades</h3>
+                <p class="project-description-2">Herramientas personalizadas para pentesting y auditorías de seguridad web.</p>
             </div>
-            <div class="circle small">
-                <img src="img2.jpg">
+            <div class="project-card">
+                <h3 class="project-title-3">Bot de Trading</h3>
+                <p class="project-description-3">Sistema automatizado de trading con análisis técnico y machine learning.</p>
             </div>
-
-            <div class="content-text">
-                <div class="place">
-                    <h1>Ciberseguridad</h1>
-                </div>
-
-                <div class="country">
-                    <h2>Pentesting Web</h2>
-                </div>
+            <div class="project-card">
+                <h3 class="project-title-4">Dashboard Interactivo</h3>
+                <p class="project-description-4">Interfaz web moderna para visualización de datos financieros en tiempo real.</p>
             </div>
         </div>
+    </section>
 
-        <div class="bg-slide">
-            <div class="circle bg">
-                <img src="img3.jpg">
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section content-section">
+        <h1 class="section-title-contacto">Contacto</h1>
+        <p class="contacto-intro">¿Interesado en colaborar? ¡Hablemos!</p>
+        
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label class="label-nombre">Nombre</label>
+                <input type="text" class="input-nombre" placeholder="Tu nombre" required>
             </div>
-            <div class="circle large">
-                <img src="img3.jpg">
+            <div class="form-group">
+                <label class="label-email">Email</label>
+                <input type="email" class="input-email" placeholder="tu@email.com" required>
             </div>
-            <div class="circle small">
-                <img src="img3.jpg">
+            <div class="form-group">
+                <label class="label-mensaje">Mensaje</label>
+                <textarea class="input-mensaje" placeholder="Tu mensaje..." required></textarea>
             </div>
+            <button type="submit" class="submit-btn btn-enviar">Enviar mensaje</button>
+        </form>
 
-            <div class="content-text">
-                <div class="place">
-                    <h1>Trading</h1>
-                </div>
-
-                <div class="country">
-                    <h2>Algoritmico</h2>
-                </div>
-            </div>
+        <div class="contact-info">
+            <p class="contacto-redes">O encuéntrame en:</p>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
         </div>
-
-        <div class="bg-slide">
-            <div class="circle bg">
-                <img src="img4.jpg">
-            </div>
-            <div class="circle large">
-                <img src="img4.jpg">
-            </div>
-            <div class="circle small">
-                <img src="img4.jpg">
-            </div>
-
-            <div class="content-text">
-                <div class="place">
-                    <h1>Bots Trading</h1>
-                </div>
-
-                <div class="country">
-                    <h2>Python</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-slide">
-            <div class="circle bg">
-                <img src="img5.jpg">
-            </div>
-            <div class="circle large">
-                <img src="img5.jpg">
-            </div>
-            <div class="circle small">
-                <img src="img5.jpg">
-            </div>
-
-            <div class="content-text">
-                <div class="place">
-                    <h1>FrontEnd</h1>
-                </div>
-
-                <div class="country">
-                    <h2>Html, Css, Javascript</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="circle-darktransp"></div>
-
-        <span class="line"></span>
-
-        <span class="rotate-btn">
-            <i class='bx bx-rotate-right'></i>
-        </span>
-    </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
-
-
 </html>
