@@ -931,8 +931,17 @@ body {
 }
 
 
+/* ====Enlaces dentro de certificados==== */
+.cert-badge span a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
 
-
+.cert-badge span a:hover {
+    color: #aba72c;
+    text-decoration: underline;
+}
 
 
 
