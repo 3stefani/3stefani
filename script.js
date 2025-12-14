@@ -95,6 +95,8 @@ const translations = {
         'sobre-mi-certs-title': 'Certificaciones',
         'cert-text-1': 'eJPT - Junior Penetration Tester (INE Security, 2025)',
         'cert-text-2': 'Introduction to OSINT (Security Blue Team, 2025)',
+        'cert-text-3': 'Introduction to Digital Forensics (Security Blue Team, 2025)',
+        'cert-text-4': 'Introduction to Cybersecurity (Cisco, 2025)',
         'cta-text': '¿Quieres saber más sobre mi trabajo?',
         'btn-projects': 'Ver mis proyectos',
         'btn-contact-cta': 'Contactar',
@@ -181,6 +183,8 @@ const translations = {
         'sobre-mi-certs-title': 'Certifications',
         'cert-text-1': 'eJPT - Junior Penetration Tester (INE Security, 2025)',
         'cert-text-2': 'Introduction to OSINT (Security Blue Team, 2025)',
+        'cert-text-3': 'Introduction to Digital Forensics (Security Blue Team, 2025)',
+        'cert-text-4': 'Introduction to Cybersecurity (Cisco, 2025)',
         'cta-text': 'Want to know more about my work?',
         'btn-projects': 'View my projects',
         'btn-contact-cta': 'Contact',
@@ -278,6 +282,7 @@ function handleSubmit(event) {
     alert(successMessage);
     event.target.reset();
 }
+
 
 
 
