@@ -692,8 +692,8 @@ body {
 
 /* Featured Project */
 .featured-project {
-    background: linear-gradient(135deg, rgba(171, 167, 44, 0.3) 0%, rgba(171, 167, 44, 0.1) 100%);
-    border: 2px solid #aba72c;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     padding: 40px;
     border-radius: 20px;
     margin-bottom: 60px;
@@ -703,7 +703,9 @@ body {
 
 .featured-project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(171, 167, 44, 0.3);
+    border-color: #aba72c;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .featured-icon {
@@ -927,6 +929,7 @@ body {
     height: 24px;
     object-fit: contain;
 }
+
 
 
 
